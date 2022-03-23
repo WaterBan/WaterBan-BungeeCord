@@ -1,0 +1,7 @@
+name: WaterBan
+version: '${project.version}'
+main: de.dasshark.waterban.Main
+description: Ban Plugin for BungeeCord and Waterfall
+commands:
+  ban:
+  kick:

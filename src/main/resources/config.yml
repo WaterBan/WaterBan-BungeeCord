@@ -1,0 +1,70 @@
+MySQL:
+  Username: root
+  Password: password
+  Database: waterBan
+  Host: localhost
+  Port: '3306'
+Messages:
+  Kick:
+    # Shows to the sender when the requested Player isn't online
+    Player Not Online: "&cThis player isn't online"
+    # Reason when no reason is specified
+    Default: "Not specified"
+    # Lines (1-4) in Kick Message for Player
+    # Use [REASON] to show the reason in the message
+    # Use any color code of your choice to get an empty Line
+    Line 1: "&cYou have been kicked from the network!"
+    Line 2: "&3Reason: &c[REASON]"
+    Line 3: "&c "
+    Line 4: "&c "
+  PermanentBan:
+    # Shows to the sender when no reason is specified
+    No reason specified: "&cPlease specify one reason. You can see available reasons with &4/waterban reasons&c."
+    # Shows to the sender when a wrong reason is specified
+    Wrong reason specified: "&cPlease specify a valid reason. You can see available reasons with &4/waterban reasons&c."
+    # Lines (1-4) in Ban Message for Player
+    # Use [REASON] to show the reason in the message
+    # Use any color code of your choice to get an empty Line
+    Line 1: "&cYou have been &4PERMANENTLY banned from the network!"
+    Line 2: "&3Reason: &c[REASON]"
+    Line 3: "&c "
+    Line 4: "&aAt &eour Discord &ayou can open a ticket to be unbanned!"
+  TempBan:
+    # Shows to the sender when no reason is specified
+    No reason specified: "&cPlease specify a reason. You can see available reasons with &4/waterban reasons&c."
+    # Shows to the sender when a wrong reason is specified
+    Wrong reason specified: "&cPlease specify a valid reason. You can see available reasons with &4/waterban reasons&c."
+    # Lines (1-4) in Ban Message for Player
+    # Use [REASON] to show the reason in the message
+    # Use [REMAINING] to show the remaining Ban time in the message
+    # Use any color code of your choice to get an empty Line
+    Line 1: "&cYou have been &4TEMPORARILY banned from the network!"
+    Line 2: "&3Reason: &c[REASON]"
+    Line 3: "&c "
+    Line 4: "&cRemaining: [REMAINING]."
+    Line 5: "&aAt &eour Discord &ayou can open a ticket to be unbanned!"
+BanReasons:
+  # You can specify up to 10 BanReasons that can be used ingame with the code
+  1: "Hacking/Cheating"
+  2: "Insult"
+  3: "Behavior"
+  4: "Spamming"
+  5: "Ads"
+  6: "Report Abuse"
+  7: "Teaming"
+  8: "Inappropriate Name/Skin"
+  9: "Bugusing"
+  0: "Too many bans before!"
+  Time for Ban:
+    # You can specify the Banlength for the Banreasons, e.g. 2w or 1d or 5h or 30min or 20sec
+    # For an permanent Ban you can use PERMANENT
+    1: "3w"
+    2: "1d"
+    3: "1w"
+    4: "6h"
+    5: "6h"
+    6: "2h"
+    7: "2d"
+    8: "1w"
+    9: "5d"
+    0: "PERMANENT"
